@@ -68,8 +68,9 @@ sudo docker create \
 --bitcoin.testnet \
 --bitcoin.node=neutrino \
 --neutrino.connect=faucet.lightning.community \
---noencryptwallet \
+--noseedbackup \
 --tlsextradomain=MY_DOMAIN_NAME
+-v LOCAL:NESTED
 sudo docker start lndt
 ```
 
